@@ -1,0 +1,5 @@
+Django == 1.11.3
+djangorestframework == 3.6.3
+roman==2.0.0
+gunicorn==19.7.1
+drfdocs==0.0.11

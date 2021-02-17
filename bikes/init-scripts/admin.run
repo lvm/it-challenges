@@ -1,0 +1,6 @@
+#!/bin/sh
+cd /srv/bikes/;
+exec gunicorn --env DJANGO_SETTINGS_MODULE=bikes.admin \
+     bikes.wsgi_admin:application \
+    --bind 0.0.0.0:8002 \
+    --workers 2

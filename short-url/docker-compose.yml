@@ -1,0 +1,36 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:9.6-alpine
+    restart: unless-stopped
+    container_name: shorturl-db
+    env_file:
+     - ./docker.env
+    ports:
+     - "5432:5432"
+    networks:
+      - shorturl_apps
+  web:
+    build:
+      context: .
+      args:
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    image: shorturl-py
+    container_name: shorturl-web
+    restart: unless-stopped
+    command: ./entrypoint.sh
+    env_file:
+     - ./docker.env
+    volumes:
+      - .:/app/
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    networks:
+      - shorturl_apps
+
+networks:
+  shorturl_apps:
+    external: true

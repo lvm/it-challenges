@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+import argparse
+from grait import RDAP
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "ipaddr",
+        type=str,
+        default="",
+        help=(
+            "IP Address to Localize. "
+            "Multi IPs are valid but separated by a comma. "
+            "Ex: 10.1.2.3,200.55.11.2"
+        ),
+    )
+    parser.add_argument("--json", action="store_true", help="Print results as JSON")
+    args = parser.parse_args()
+
+    rdap = RDAP()
+    ipaddr = [_.strip() for _ in args.ipaddr.split(",")]
+    if len(ipaddr) == 1:
+        ipaddr = ipaddr.pop(0)
+        if args.json:
+            print(rdap.lookup_serialized(ipaddr))
+        else:
+            print(rdap.lookup(ipaddr))
+    else:
+        if args.json:
+            print(rdap.batch_lookup_serialized(ipaddr))
+        else:
+            print(rdap.batch_lookup(ipaddr))

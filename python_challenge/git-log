@@ -1,0 +1,41 @@
+commit f44db330e411099fb612c516186a7c512e7f8425
+Author: Mauro <mauro@sdf.org>
+Date:   Sun Oct 10 03:04:28 2021 -0300
+
+    bump readme + small fix in geoip
+
+commit fea8fff08f41878abaf865f38159144125307e82
+Author: Mauro <mauro@sdf.org>
+Date:   Sun Oct 10 02:39:25 2021 -0300
+
+    bump readme
+
+commit c381ba3073f5a9bbfede0516c1e889212dbc41e1
+Author: Mauro <mauro@sdf.org>
+Date:   Sun Oct 10 02:38:34 2021 -0300
+
+    Adding a final test for RDAP
+
+commit 6bd49eadc550955ae24fd6d09bdc3ad668b40289
+Author: Mauro <mauro@sdf.org>
+Date:   Sun Oct 10 02:32:07 2021 -0300
+
+    Adding grait + bin + tests + setup + requirements
+
+commit 0afde1a3eda72f25e18ed778a092013a2d80f7f0
+Author: Mauro <mauro@sdf.org>
+Date:   Sun Oct 10 02:31:47 2021 -0300
+
+    minor update
+
+commit 7d30e08a03bb6ff1cad0bd8cba1b75dd4796f1d5
+Author: Mauro <mauro@sdf.org>
+Date:   Sat Oct 9 21:17:06 2021 -0300
+
+    bump readme
+
+commit 565b8eed6566157fe5e4aad58a6470c2595007a7
+Author: Mauro <mauro@sdf.org>
+Date:   Sat Oct 9 20:43:00 2021 -0300
+
+    init

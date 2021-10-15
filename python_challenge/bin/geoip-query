@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+
+import json
+import argparse
+from pathlib import Path
+
+from grait import GeoIP
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("geofile", type=str, default="", help="Geo Legacy CSV File")
+    parser.add_argument(
+        "ipaddr",
+        type=str,
+        default="",
+        help=(
+            "IP Address to Localize. "
+            "Multi IPs are valid but separated by a comma. "
+            "Ex: 10.1.2.3,200.55.11.2"
+        ),
+    )
+    parser.add_argument("--json", action="store_true", help="Print results as JSON")
+    args = parser.parse_args()
+
+    if args.geofile:
+        geofile = Path(args.geofile)
+        geo = GeoIP(geofile)
+        ipaddr = [_.strip() for _ in args.ipaddr.split(",")]
+        if len(ipaddr) == 1:
+            ipaddr = ipaddr.pop(0)
+            if args.json:
+                print(geo.locate_serialized(ipaddr))
+            else:
+                print(geo.locate(ipaddr))
+        else:
+            if args.json:
+                print(geo.batch_locate_serialized(ipaddr))
+            else:
+                print(geo.batch_locate(ipaddr))
+
+    else:
+        parser.print_help()

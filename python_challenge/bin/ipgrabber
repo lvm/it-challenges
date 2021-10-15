@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import argparse
+from pathlib import Path
+
+from grait import IPGrabber
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("ipfile", type=str, default="", help="File with IPs")
+    parser.add_argument("--json", action="store_true", help="Print results as JSON")
+    args = parser.parse_args()
+
+    if args.ipfile:
+        ipfile = Path(args.ipfile)
+        ipg = IPGrabber(ipfile)
+        if args.json:
+            print(ipg.get_result_serialized())
+        else:
+            print(ipg.get_result())
+    else:
+        parser.print_help()

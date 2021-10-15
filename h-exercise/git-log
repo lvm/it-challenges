@@ -1,0 +1,95 @@
+commit 8dc6c56aa0fadd32bbbe11ce4cfdcfff7b8a178a
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 01:00:41 2021 -0300
+
+    Bump readme
+
+commit 43a629e4e2a8f1e06159d7d9f16dfe7b59e8feff
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:59:48 2021 -0300
+
+    moved fixtures to its own dir
+
+commit a463ca750fd9f28fb808aa05f215063c8c0972fc
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:59:10 2021 -0300
+
+    moved tests to its own dir + bump readme
+
+commit 323909f5e9a16a6142da3ea6a00b27c4b56c05c3
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:57:36 2021 -0300
+
+    Bump readme + last  test
+
+commit 6ffa611487ab6ea4a9448a45e265cc10afc21862
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:55:09 2021 -0300
+
+    minor improvements
+
+commit 81f6d8e8534c3a697ec4a1aa4334d40122bcf37f
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:51:24 2021 -0300
+
+    And the readme.md
+
+commit 8ce9a0f40f62322cdbb273381c9d05c61394e557
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:50:19 2021 -0300
+
+    Adding some basic testing
+
+commit 6cb8a0482aefa070a4ebd12e3b4ed15506e15eb5
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:37:40 2021 -0300
+
+    app is just a cli app
+
+commit 3127698a8efaf3beecafb6104fee0d0e23bc4090
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:37:25 2021 -0300
+
+    Moving balance to its own pkg
+
+commit d6317d7f7688812a2853f8909ac5781465145134
+Author: Mauro <mauro@sdf.org>
+Date:   Wed Sep 29 00:37:07 2021 -0300
+
+    Adding gitignore
+
+commit a544d286653d1bd49658eb14a58db02bc63e9b4d
+Author: Mauro <mauro@sdf.org>
+Date:   Tue Sep 28 23:50:09 2021 -0300
+
+    Added a Balance dataclass + Now there are balances for all and until certain date
+
+commit 939728df3e3a421ca2a0627a8eb2bb996015b456
+Author: Mauro <mauro@sdf.org>
+Date:   Tue Sep 28 21:44:50 2021 -0300
+
+    Corrected filter_row method + filter sample
+
+commit 8453ac26b12e08de04dacba73e15bfab9eced011
+Author: Mauro <mauro@sdf.org>
+Date:   Tue Sep 28 21:40:29 2021 -0300
+
+    Added a filter method + fixed a bug in the gen_random_data
+
+commit 7ea7f46a93adcd4d5d7430f85a0836c6766a0c06
+Author: Mauro <mauro@sdf.org>
+Date:   Tue Sep 28 21:11:42 2021 -0300
+
+    Adding a Finance class
+
+commit 335b19815664dc8592829e2f0614039174f52155
+Author: Mauro <mauro@sdf.org>
+Date:   Tue Sep 28 21:03:23 2021 -0300
+
+    Adding generator for random data
+
+commit 69af456d339feb52bd4c014bae62279a57f832b5
+Author: Mauro <mauro@sdf.org>
+Date:   Tue Sep 28 20:57:38 2021 -0300
+
+    init

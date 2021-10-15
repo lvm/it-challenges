@@ -1,0 +1,34 @@
+__pycache__
+*.py[cod]
+.ipython/
+.#*
+
+# Development environment
+node_modules
+/local/
+.local/
+.cache/
+/Procfile.dev
+.python-version
+.tool-versions
+.envrc
+.env
+.idea
+.sass-cache
+.pytest_cache
+.coverage
+*~
+.npm/
+
+# Excel temp files
+~$*.xls*
+*.xlk
+.~lock.*
+
+# Docker things
+.python_history
+.ash_history
+Dockerfile
+docker-compose.yml
+entrypoint.sh
+orbita.env

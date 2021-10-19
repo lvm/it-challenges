@@ -1,5 +1,11 @@
 # it-challenges
 
+a wasteland of challenges
+
+![](https://i.imgur.com/W2167c1.png)
+
+## history time!
+
 So i had this harmless repository [challenges](https://github.com/lvm/challenges), but one day a company named "[Devs Killer](https://devskiller.com/)" filled a DMCA because apparently i stole some of their code. The funny thing is i have no idea who they are. 
 
 ## dear devs killer,
